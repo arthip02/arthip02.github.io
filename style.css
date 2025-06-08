@@ -105,7 +105,7 @@ button[type="reset"] {
 }
 
 .highlight-name {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 #about {
@@ -151,4 +151,21 @@ button[type="reset"] {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+ul.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+ul.skills-list img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+p.lead {
+  max-width: 700px;
+  margin: 0 auto;
 }
