@@ -7,7 +7,7 @@
   --form-width: 500px;
   --rounded: 0.5rem;
 }
-F * {
+* {
   box-sizing: border-box;
 }
 
@@ -19,8 +19,71 @@ body {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3 {
+  color: #db7093;
+}
+h1 {
+  font-size: 2rem;
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
 img.rounded-circle {
   border: 3px solid var(--primary-color);
+}
+
+.accordion-button {
+  font-weight: bold;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-title {
+  color: var(--dark-bg);
+}
+
+.form-border {
+  width: var(--form-width);
+  max-width: 100%;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: var(--rounded);
+}
+
+form .form-control {
+  border-color: var(--border-color);
+  border-radius: 0.25rem;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--dark-bg);
+  border-color: var(--dark-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-bg);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #5c636a;
 }
 
 @media (max-width: 768px) {
@@ -34,9 +97,58 @@ img.rounded-circle {
 }
 
 .text-warning {
-  color: #db7093 !important; /* Dark amber */
+  color: #db7093 !important;
 }
 
 .highlight-name {
-  color: #db7093; /* Accessible pink with contrast ~7.8:1 */
+  color: #db7093;
+}
+
+.highlight-name {
+  font-size: 2.5rem;
+}
+
+#about {
+  background-color: #fff5f8;
+}
+
+#education {
+  background-color: #f5f9ff;
+}
+
+#experience {
+  background-color: #f8fef8;
+}
+
+#projects {
+  background-color: #fffaf0;
+}
+
+#contact {
+  background-color: #f9f9f9;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+#projects .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+  transform: scale(1.23);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
