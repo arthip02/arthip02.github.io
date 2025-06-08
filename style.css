@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --light-bg: #f8f9fa;
+  --dark-bg: #212529;
+  --border-color: #dee2e6;
+  --form-width: 500px;
+  --rounded: 0.5rem;
+}
+F * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--light-bg);
+  color: #212529;
+  scroll-behavior: smooth;
+}
+
+img.rounded-circle {
+  border: 3px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .form-border {
+    padding: 0.5rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+.text-warning {
+  color: #db7093 !important; /* Dark amber */
+}
+
+.highlight-name {
+  color: #db7093; /* Accessible pink with contrast ~7.8:1 */
+}
