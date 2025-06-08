@@ -164,6 +164,197 @@
           </div>
         </div>
       </section>
+      <section id="experience" class="bg-light py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Experience & Skills</h2>
+          <div class="accordion" id="experienceAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  Work Experience
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#experienceAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    At Gainsight, I worked as a Data Analyst for 2 years where I
+                    was responsible for analyzing customer data, generating
+                    insights, and supporting strategic decision-making. I
+                    collaborated with product, marketing, and engineering teams
+                    to create dashboards, reports, and predictive models that
+                    improved customer retention and product adoption.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  Skills
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#experienceAccordion"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>SQL</li>
+                    <li>DBMS</li>
+                    <li>Algorithms</li>
+                    <li>Java</li>
+                  </ul>
+                  <canvas
+                    id="skillsChart"
+                    width="400"
+                    height="200"
+                    class="mt-4"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5" style="background-color: #fffaf0">
+        <div class="container">
+          <h1 class="text-center mb-4">Projects</h1>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Fertilizer Recommendation System</h2>
+                  <p class="card-text">
+                    Built a machine learning model to recommend fertilizers
+                    based on soil NPK values. Applied classification algorithms
+                    (Random Forest, SVM) to improve farming decisions.
+                  </p>
+                  <a
+                    href="https://www.kaggle.com/code/khageshmaurya/fertilizer-recommendation-ml"
+                    class="btn btn-outline-primary"
+                    target="_blank"
+                    >view some refernces</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Facial Emotion Detection</h2>
+                  <p class="card-text">
+                    Developed a CNN-based system that classifies facial
+                    expressions from images in real time. Utilized OpenCV,
+                    Keras, and FER2013 dataset to detect emotions such as happy,
+                    sad, or angry.
+                  </p>
+                  <a
+                    href="https://github.com/omar178/Emotion-recognition"
+                    class="btn btn-outline-primary"
+                    target="_blank"
+                    >view some references</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Customer Churn Dashboard</h2>
+                  <p class="card-text">
+                    Created an interactive Power BI dashboard for churn analysis
+                    using SQL-based data pipelines. Offered insights into
+                    customer behavior and helped reduce churn through proactive
+                    measures.
+                  </p>
+                  <a
+                    href="https://learn.microsoft.com/en-us/power-bi/"
+                    class="btn btn-outline-primary"
+                    target="_blank"
+                    >view some references</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-5 d-flex justify-content-center bg-white">
+        <div class="form-border">
+          <div class="p-4 rounded">
+            <h3 class="text-center fw-bold">Contact Me</h3>
+            <p class="text-center text-muted mb-4">
+              By filling out the below form
+            </p>
+            <form
+              id="contact-form"
+              novalidate
+              aria-labelledby="contact-heading"
+            >
+              <fieldset>
+                <legend class="visually-hidden" id="contact-heading">
+                  Contact Form
+                </legend>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-flex gap-3">
+                  <button type="submit" class="btn btn-primary w-50">
+                    Submit
+                  </button>
+                  <button type="reset" class="btn btn-secondary w-50">
+                    Reset
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
