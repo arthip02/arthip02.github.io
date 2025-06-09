@@ -21,8 +21,8 @@ Open the project folder in Visual Studio Code.
 
 Use Live Server to run the site locally:
 
-Make sure the Live Server extension (by Ritwick Dey) is installed in VS Code.
+Make sure the Live Server extension is installed in VS Code.
 
 Right-click on the index.html file in the Explorer pane.
 
-Click “Open with Live Server” (as shown in the screenshot).
+Click “Open with Live Server”
