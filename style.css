@@ -169,3 +169,20 @@ p.lead {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.contact-bar {
+  background-color: var(--dark-bg);
+  color: white;
+  border-radius: var(--rounded);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-bar a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-bar a:hover {
+  text-decoration: underline;
+}
